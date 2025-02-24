@@ -1,0 +1,17 @@
+{
+  "name": "express-performance-drop",
+  "version": "1.0.0",
+  "main": "node.js",
+  "scripts": {
+    "node": "node ./src/node.js",
+    "express": "node ./src/express.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
