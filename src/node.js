@@ -1,7 +1,10 @@
 import * as http from "http";
 
-const server = http.createServer({}, (req, resp) => {
-  resp.end(JSON.stringify({ hello: "world" }));
+const server = http.createServer({}, (request, response) => {
+  const body = JSON.stringify({ hello: "world" }) + "/n";
+  response.setHeader("Content-Type", "application/json");
+  response.setHeader("Content-Length", Buffer.byteLength(body));
+  response.end(body);
 });
 
 server.listen(8080, "0.0.0.0");

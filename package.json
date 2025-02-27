@@ -4,7 +4,9 @@
   "main": "node.js",
   "scripts": {
     "node": "node ./src/node.js",
-    "express": "node ./src/express.js",
+    "node-post": "node ./src/node_post.js",
+    "express": "node ./src/express_post.js",
+    "express-post": "node ./src/express_post.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
